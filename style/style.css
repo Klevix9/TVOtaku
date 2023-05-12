@@ -1,0 +1,370 @@
+/*preloader*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+/*main page settings*/
+body{
+    background-color: #333;
+    margin: 0;
+    min-height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  min-height: 100%;
+  margin-bottom: -50px;
+  }
+
+  .wrapper:after {
+    content: "";
+    display: block;
+    height: 50px;
+  }
+
+header {
+    background-color: rgba(33, 33, 33, 0.4);
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  /*Trending cards*/
+
+  .trending .card-deck {
+    margin-top: 100px;
+  }
+
+  /*Latest*/
+  
+
+  /*burger menu setting*/
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .burger-menu span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .search-form input[type="text"] {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 5px;
+  }
+  
+  .search button {
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .clear {
+    margin-left: -1px;
+  }
+  
+  .clear:hover,
+  .submit:hover {
+    background-color: #ddd;
+  }
+
+  .menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: rgba(33, 33, 33, 0.95);
+    color: #fff;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease-in-out;
+    
+    z-index: 100;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .menu.open{
+    transform: translateX(0);
+  }
+  
+  /*social links*/
+
+  .social-links a{
+    margin-left: 20px;
+    color: #fff;
+  }
+
+  .social-links {
+    color: #333;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .discord :hover {
+    animation: pulsate 1s infinite;
+  }
+  
+  .twitter :hover {
+    animation: pulsate 1s infinite;
+  }
+  
+  .instagram :hover {
+    animation: pulsate 1s infinite;
+  }
+  
+
+  /*add a simple animation that scales the icons*/
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /*hero slider*/
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    }
+  
+  .slider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider-slide.active {
+    opacity: 1;
+  }
+
+  .slider-content, .slider-watch-content{
+    position: relative;
+    top: 250px;
+  }
+
+  .slider-controls {
+    position: relative;
+    
+  }
+
+  .slider-content h5 i{
+    padding-left: 7px;
+  }
+
+  .hero-right, .hero-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #cccccc00;
+    color: #525252;
+    cursor: pointer;
+    transform: scale(4);
+    outline: none;
+  }
+
+  .hero-right:focus, .hero-left:focus{
+    outline: none;
+  }
+  
+  .hero-left {
+    top: -100px;
+    right: 20px;
+  }
+  
+  .hero-right {
+    top: -160px;
+    right: 20px;
+  }
+ 
+  .slider-content {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: block;
+    width: 70%;
+  }
+
+  .play-button{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    z-index: 10;
+  }
+
+  .play-button i{
+    margin-left: 5px;
+  }
+
+  .detail-button{
+    text-decoration: none;
+    color: #f8f9fa;
+    margin: 10px;
+  }
+
+  .detail-button i{
+    margin-left: 5px;
+  }
+
+  #play-circle {
+    position: relative;
+    color: rgba(138, 43, 226, 1);
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 25px 0 0 25px;
+    transform: scaleX(2);
+    z-index: 0;
+  }
+
+  #detail-circle {
+    color: white;
+    box-sizing: border-box;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: auto;
+    position: relative;
+    bottom: -1;
+    width: 100%;
+    height: 50px; 
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgba(33, 33, 33, 0.4);
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+    
+    .logo {
+      font-size: 20px;
+    }
+    
+    .search-form {
+      display: none;
+    }
+  }
+  
+
+  /* Search Page */
+
+   .filters {
+    position: absolute;
+    color: #ccc;
+    background-color: rgba(33, 33, 33, 1);
+    margin: 0 10px 10px 0;
+    border-radius: 6px;
+    padding: 3px 10px;
+  }
+
+  .filters:after {
+    box-sizing: border-box;
+
+}
+
+    .filters select {
+        padding-left: 5px;
+    }
+
+  .filters .type {
+    display: none;
+  }
+
+  .genre {
+    position: absolute;
+    background-color: rgba(33, 33, 33, 1);
+  }
+
+  .flw-item {
+    position: absolute;
+    float: left;
+    margin: 7px;
+  }
