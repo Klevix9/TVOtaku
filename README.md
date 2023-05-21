@@ -30,3 +30,12 @@ added a search page with filters, and a search bar, Klevi
 added a like dislike functionality, Nino
 
 added the sitemap implementation for the website, Klevi
+
+Draft 5:
+added a the configuration files depending on the types of content, movie and tv-series, uendi
+
+added a watchlist creation cofiguration, xhoen
+
+added the login and logout and register functions, Ankel and Nino
+
+added the htaccess configuration file, and the animedetails page, Klevi
