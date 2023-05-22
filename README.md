@@ -39,3 +39,12 @@ added a watchlist creation cofiguration, xhoen
 added the login and logout and register functions, Ankel and Nino
 
 added the htaccess configuration file, and the animedetails page, Klevi
+
+Draft 6:
+added slidebar, Klevi
+
+added trending page, xhoen and nino
+
+added id, Klevi
+
+added hls, player, plyr.min.js, streaming javascript functions, uendi and ankel

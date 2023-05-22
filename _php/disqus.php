@@ -1,7 +1,7 @@
 <div class="show-comments">
     <div id="disqus_thread"></div>
           <script>
-              (function() { // DON'T EDIT BELOW THIS LINE
+              (function() {
               var d = document, s = d.createElement('script');
               s.src = '<?=$disqus?>/embed.js';
               s.setAttribute('data-timestamp', +new Date());
